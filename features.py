@@ -93,11 +93,11 @@ class FeaturesExtractor:
             cert = conn.getpeercert()
             conn.close()
 
-            #not_before_str = cert['notBefore']
-            #not_after_str = cert['notAfter']
+            not_before_str = cert['notBefore']
+            not_after_str = cert['notAfter']
     
-            not_before = datetime.strptime(cert['notBefore'], "%b %d %H:%M:%S %Y %Z")
-            not_after = datetime.strptime(cert['notAfter'], "%b %d %H:%M:%S %Y %Z")
+            not_before = datetime.strptime(not_before_str, "%b %d %H:%M:%S %Y %Z")
+            not_after = datetime.strptime(not_after_str, "%b %d %H:%M:%S %Y %Z")
     
             lifetime = not_after.year - not_before.year
             if lifetime >= 2:
@@ -106,6 +106,12 @@ class FeaturesExtractor:
                 return 0
         else:
             return -1
+        
+    def Domain_registeration_length(self):
+        pass
+
+    def Favicon(self):
+        pass
 
 
 
@@ -114,4 +120,3 @@ class FeaturesExtractor:
 url = "https://www.facebook.com/"
 sample = FeaturesExtractor(url)
 print(sample.features)
-#print(sample.SSLfinal_State())
