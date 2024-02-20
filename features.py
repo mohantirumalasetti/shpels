@@ -98,12 +98,34 @@ class FeaturesExtractor:
     
             not_before = datetime.strptime(not_before_str, "%b %d %H:%M:%S %Y %Z")
             not_after = datetime.strptime(not_after_str, "%b %d %H:%M:%S %Y %Z")
-    
+
             lifetime = not_after.year - not_before.year
-            if lifetime >= 2:
-                return 1
-            else:
-                return 0
+
+            issuer = cert['issuer']
+            reputable_cas = ["GeoTrust",
+                             "GoDaddy",
+                             "Network Solutions",
+                             "Thawte",
+                             "Comodo",
+                             "Doster",
+                             "VeriSign",
+                             "GlobalSign",
+                             "Entrust",
+                             "DigiCert",
+                             "Symantec",
+                             "RapidSSL",
+                             "Trustwave",
+                             "IdenTrust",
+                             "Google"
+                             ]
+            issuer = issuer[1][0][1].split(" ")[0]
+            print(issuer)
+            for ca in reputable_cas:
+                if issuer.lower() in ca.lower() and lifetime >= 1:
+                    return 1
+                else:
+                    continue
+            return 0
         else:
             return -1
         
@@ -117,6 +139,6 @@ class FeaturesExtractor:
 
 
 
-url = "https://www.facebook.com/"
+url = "https://www.instagram.com/"
 sample = FeaturesExtractor(url)
 print(sample.features)
