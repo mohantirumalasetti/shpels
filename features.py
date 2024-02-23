@@ -53,6 +53,7 @@ class FeaturesExtractor:
         self.features.append(self.SSLfinal_State())
         self.features.append(self.Domain_registeration_length())
         self.features.append(self.Favicon())
+        self.features.append(self.port())
 
     
     def having_IP_Address(self):
@@ -189,6 +190,15 @@ class FeaturesExtractor:
                     if self.url in head.link['href'] or len(dots) == 1 or self.domain in head.link['href']:
                         return 1
             return -1
+        except:
+            return -1
+        
+    def port(self):
+        try:
+            port = self.domain.split(":")
+            if len(port) > 1:
+               return -1
+            return 1
         except:
             return -1
 
