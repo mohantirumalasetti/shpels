@@ -9,9 +9,9 @@ Dataset Source: https://archive.ics.uci.edu/dataset/327/phishing+websites
 #Prefix_Suffix
 #having_Sub_Domain
 #SSLfinal_State
-Domain_registeration_length
-Favicon
-port
+#Domain_registeration_length
+#Favicon
+#port
 HTTPS_token
 Request_URL
 URL_of_Anchor
