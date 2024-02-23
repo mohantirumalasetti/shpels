@@ -201,6 +201,9 @@ class FeaturesExtractor:
             return 1
         except:
             return -1
+        
+    def HTTPS_token(self):
+        pass
 
 
 
