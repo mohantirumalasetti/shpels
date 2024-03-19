@@ -56,6 +56,33 @@ Research conducted by Rami M. Mohammad, Fadi Thabtah, and Lee McCluskey highligh
 6. **Number of Links Pointing to Page**: Analyzes the number of links pointing to the webpage.
 7. **Statistical Reports**: Considers statistical reports from reputable sources.
 
+### API Key Configuration
+
+To ensure proper functionality of the Malicious URL Detector, you need to provide your API keys for certain services. Follow the steps below to add your API keys to the `features.py` file:
+
+1. Open the `features.py` file located in the project directory.
+
+2. Locate the following lines in the file:
+
+    ```python
+    self.google_api = "GOOGLE_API_KEY"  # Add Google API Key here https://github.com/mohantirumalasetti/shpels/blob/bb06100a61aa6f055957465146d2d203d1ffa4a1/features.py#L26
+    self.similarweb_api_key = "SIMILARWEB_API_KEY" # Add SimilarWeb API Key here https://github.com/mohantirumalasetti/shpels/blob/bb06100a61aa6f055957465146d2d203d1ffa4a1/features.py#L26
+    ```
+
+3. Replace `"GOOGLE_API_KEY"` with your Google API Key and `"SIMILARWEB_API_KEY"` with your SimilarWeb API Key.
+
+4. Save the changes to the `features.py` file.
+
+### Example:
+
+```python
+self.google_api = "your_google_api_key_here"
+self.similarweb_api_key = "your_similarweb_api_key_here"
+```
+
+Make sure to obtain API keys from the respective service providers and replace the placeholder strings with your actual keys.
+
+
 ### Usage
 
 1. Clone the repository:
