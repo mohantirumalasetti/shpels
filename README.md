@@ -1,4 +1,4 @@
-## SHAPELS
+## Shpels
 
 ![Malicious URL Detector Banner](banner.png)
 
