@@ -65,8 +65,8 @@ To ensure proper functionality of the Malicious URL Detector, you need to provid
 2. Locate the following lines in the file:
 
     ```python
-    [self.google_api = "GOOGLE_API_KEY"  # Add Google API Key] here (https://github.com/mohantirumalasetti/shpels/blob/bb06100a61aa6f055957465146d2d203d1ffa4a1/features.py#L26)
-    [self.similarweb_api_key = "SIMILARWEB_API_KEY" # Add SimilarWeb API Key] (here https://github.com/mohantirumalasetti/shpels/blob/bb06100a61aa6f055957465146d2d203d1ffa4a1/features.py#L26)
+    self.google_api = "GOOGLE_API_KEY"  # Add Google API Key
+    self.similarweb_api_key = "SIMILARWEB_API_KEY" # Add SimilarWeb API Key
     ```
 
 3. Replace `"GOOGLE_API_KEY"` with your Google API Key and `"SIMILARWEB_API_KEY"` with your SimilarWeb API Key.
