@@ -6,7 +6,7 @@
 
 ### Overview
 
-The Malicious URL Detector is a Python tool designed to predict whether a given URL is malicious or not. It utilizes machine learning algorithms trained on a dataset containing various features extracted from URLs to make predictions.
+shpels is a Python tool designed to predict whether a given URL is malicious or not. It utilizes machine learning algorithms trained on a dataset containing various features extracted from URLs to make predictions.
 
 ### Background
 
