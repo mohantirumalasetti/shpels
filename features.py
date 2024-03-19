@@ -103,9 +103,9 @@ class FeaturesExtractor:
             return 1
         
     def URL_Length(self):
-        if len(url) < 54:
+        if len(self.url) < 54:
             return 1
-        elif len(url) >= 54 and len(url) <= 75:
+        elif len(self.url) >= 54 and len(self.url) <= 75:
             return 0
         else:
             return -1
@@ -300,7 +300,7 @@ class FeaturesExtractor:
                 link = tag.get('href')
                 if link:
                     total += 1
-                    if ('#' in link and link[0]=="#" ) or 'javascript' in str(link).lower() or 'mailto' in link or (url == link):
+                    if ('#' in link and link[0]=="#" ) or 'javascript' in str(link).lower() or 'mailto' in link or (self.url == link):
                         sus_points += 1
 
             percent = (sus_points/total)* 100
