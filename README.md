@@ -61,13 +61,13 @@ Research conducted by Rami M. Mohammad, Fadi Thabtah, and Lee McCluskey highligh
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mohantirumalasetti/Shpels.git
+   git clone https://github.com/mohantirumalasetti/shpels.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Shpels
+   cd shpels
    ```
 
 3. Set up and activate a virtual environment:
@@ -87,7 +87,7 @@ Research conducted by Rami M. Mohammad, Fadi Thabtah, and Lee McCluskey highligh
 5. Run the tool and enter the URL you want to predict:
 
    ```bash
-   python Shpels.py
+   python shpels.py
    ```
 
 ### Contributing
