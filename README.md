@@ -1,4 +1,4 @@
-## Malicious URL Detector
+## SHAPELS
 
 ![Malicious URL Detector Banner](banner.png)
 
