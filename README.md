@@ -61,13 +61,13 @@ Research conducted by Rami M. Mohammad, Fadi Thabtah, and Lee McCluskey highligh
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/malicious-url-detector.git
+   git clone https://github.com/mohantirumalasetti/Shpels.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd malicious-url-detector
+   cd Shpels
    ```
 
 3. Set up and activate a virtual environment:
@@ -87,7 +87,7 @@ Research conducted by Rami M. Mohammad, Fadi Thabtah, and Lee McCluskey highligh
 5. Run the tool and enter the URL you want to predict:
 
    ```bash
-   python malicious_url_detector.py
+   python Shpels.py
    ```
 
 ### Contributing
