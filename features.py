@@ -23,8 +23,8 @@ class FeaturesExtractor:
         self.url_parse = ""
         self.whois_res = ""
         self.soup = ""
-        self.google_api = "GOOGLE_API_KEY"
-        self.similarweb_api_key = "SIMILARWEB_API_KEY"
+        self.google_api = "GOOGLE_API_KEY"  # Add Google API Key here
+        self.similarweb_api_key = "SIMILARWEB_API_KEY" # Add SimilarWeb API Key here
 
         try:
             self.url_parse = urlparse(url)
