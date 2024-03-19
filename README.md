@@ -94,10 +94,3 @@ Research conducted by Rami M. Mohammad, Fadi Thabtah, and Lee McCluskey highligh
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or create a pull request.
 
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
---- 
-
-Feel free to customize this README file according to your project's specific details and requirements. Let me know if you need further assistance!
