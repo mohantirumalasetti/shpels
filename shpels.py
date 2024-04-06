@@ -53,6 +53,8 @@ def process(url):
         predicted_probabilities = model.predict_proba(input_data)
        
         print("\033[95m-------------------------------------------------------------\033[0m")
+        print("\b\033[93mProbability:\033[0m")
+        print("\033[95m------------\033[0m")
         print("\033[1mPhishing Site  : \033[96m", predicted_probabilities[0][0]*100, "%\033[0m")
         print("\033[1mLegitimate Site: \033[96m", predicted_probabilities[0][1]*100, "%\033[0m")
         print("\033[95m-------------------------------------------------------------\033[0m")
